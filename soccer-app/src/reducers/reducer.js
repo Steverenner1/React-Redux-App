@@ -1,37 +1,37 @@
-import {FETCH_MATCHES_PENDING, FETCH_MATCHES_SUCCESS, FETCH_MATCHES_ERROR} from '../actions/action';
+// import {FETCH_MATCHES_START, FETCH_MATCHES_SUCCESS, FETCH_MATCHES_FAILURE} from '../actions';
 
-const initialState = {
-    pending: false,
-    matches: [],
-    error: null
-}
+// const initialState = {
+//     pending: false,
+//     matches: [],
+//     error: null
+// }
 
-export const reducer = (state = initialState, action) => {
-    console.log(action)
-    switch(action.type) {
-        case FETCH_MATCHES_PENDING:
-            return {
-                ...state,
-                pending: true
-            }
-        case FETCH_MATCHES_SUCCESS:
-            return {
-                ...state,
-                pending: false,
-                matches: action.payload
-            }
-        case FETCH_MATCHES_ERROR:
-            return {
-                ...state,
-                pending: false,
-                error: action.error
-            }
-        default:
-            return state;
-    }
-}
+// export const reducer = (state = initialState, action) => {
+//     console.log(action)
+//     switch(action.type) {
+//         case FETCH_MATCHES_START:
+//             return {
+//                 ...state,
+//                 pending: true
+//             }
+//         case FETCH_MATCHES_SUCCESS:
+//             return {
+//                 ...state,
+//                 pending: false,
+//                 matches: action.payload
+//             }
+//         case FETCH_MATCHES_FAILURE:
+//             return {
+//                 ...state,
+//                 pending: false,
+//                 error: action.error
+//             }
+//         default:
+//             return state;
+//     }
+// }
 
-export const getMatches = state => state.matches;
-export const getMatchesPending = state => state.pending;
-export const getMatchesError = state => state.error;
+// export const getSoccerMatches = state => state.matches;
+// export const getMatchesSuccess = state => state.success;
+// export const getMatchesFailure = state => state.failure;
 
