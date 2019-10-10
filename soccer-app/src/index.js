@@ -16,7 +16,9 @@ const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 function App() {
     return (
         <div className="App">
+            <div className="Column">
             <SoccerList />
+            </div>
         </div>
     );
 }

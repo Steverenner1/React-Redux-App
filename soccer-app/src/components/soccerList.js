@@ -9,12 +9,12 @@ import SoccerCard from './soccerCard';
 const SoccerList = props => {
     return (
         <>
-            <h1>Soccer Info</h1>
+            <h1>French Bulldog Pictures</h1>
             <button onClick={props.getData}>
                 {props.isLoading ? (
                     <Loader type="Tailspin" color="blue" height="13" width="100" />
                 ) : (
-                    'See Info'
+                    'See Cuteness'
                 )}
             </button>
             {props.stats &&
